@@ -1,0 +1,77 @@
+{
+  "register": {
+    "buttonText": "Зареєструватись",
+    "inputs": [
+      {
+        "name": "userName",
+        "label": "Ваші імʼя та прізвище *",
+        "placeholder": "Іван Іванчук",
+        "error": "Ви неправильно вказали імʼя чи прізвище",
+        "options": {
+          "type": "text",
+          "required": true,
+          "pattern": "^(?![\\s-]*[\\s-])(?!.*--)(?!.*- )(?!.* -)(?!.*'-)(?=.*[A-Za-zА-Яа-яЇїІіЄєҐґ])[A-Za-zА-Яа-яЇїІіЄєҐґ' -]+$",
+          "minLength": { "value": 3, "message": "Не менше 3 символів" },
+          "maxLength": { "value": 70, "message": "Не більше 70 символів" }
+        }
+      },
+      {
+        "name": "userEmail",
+        "label": "Електронна пошта *",
+        "placeholder": "ivanchuk@gmail.com",
+        "error": "Ви ввели пошту у неправильному форматі",
+        "options": {
+          "type": "text",
+          "required": true,
+          "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9._-]*[A-Za-z0-9])?@[a-zA-Z0-9.-]+(?:.[a-zA-Z]{2,})+$",
+          "minLength": { "value": 6, "message": "Не менше 6 символів" },
+          "maxLength": { "value": 63, "message": "Не більше 63 символів" }
+        }
+      },
+      {
+        "name": "userPassword",
+        "label": "Пароль *",
+        "placeholder": "Не менше 4 символів",
+        "error": "Ви ввели пароль у неправильному форматі",
+        "options": {
+          "type": "password",
+          "required": true,
+          "pattern": "",
+          "minLength": { "value": 4, "message": "Не менше 4 символів" },
+          "maxLength": { "value": 40, "message": "Не більше 40 символів" }
+        }
+      }
+    ]
+  },
+  "login": {
+    "buttonText": "Увійти",
+    "inputs": [
+      {
+        "name": "userEmail",
+        "label": "Електронна пошта *",
+        "placeholder": "ivanchuk@gmail.com",
+        "error": "Ви ввели пошту у неправильному форматі",
+        "options": {
+          "type": "text",
+          "required": true,
+          "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9._-]*[A-Za-z0-9])?@[a-zA-Z0-9.-]+(?:.[a-zA-Z]{2,})+$",
+          "minLength": { "value": 6, "message": "Не менше 6 символів" },
+          "maxLength": { "value": 63, "message": "Не більше 63 символів" }
+        }
+      },
+      {
+        "name": "userPassword",
+        "label": "Пароль *",
+        "placeholder": "",
+        "error": "Ви ввели пароль у неправильному форматі",
+        "options": {
+          "type": "password",
+          "required": true,
+          "pattern": "",
+          "minLength": { "value": 4, "message": "Не менше 4 символів" },
+          "maxLength": { "value": 40, "message": "Не більше 40 символів" }
+        }
+      }
+    ]
+  }
+}
